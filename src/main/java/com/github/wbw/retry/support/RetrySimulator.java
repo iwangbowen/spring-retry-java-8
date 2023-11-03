@@ -41,8 +41,8 @@ import com.github.wbw.retry.backoff.SleepingBackOffPolicy;
  * provided as part of the {@link RetrySimulation}.
  *
  * Note that the impetus for this class was to expose the timings which are possible with
- * {@link com.github.wbw.retry.backoff.ExponentialRandomBackOffPolicy}, which provides
- * random values and must be looked at over a series of trials.
+ * {@link com.github.wbw.retry.backoff.ExponentialRandomBackOffPolicy}, which
+ * provides random values and must be looked at over a series of trials.
  *
  * @author Jon Travis
  */

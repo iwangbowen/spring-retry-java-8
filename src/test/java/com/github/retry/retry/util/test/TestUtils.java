@@ -30,8 +30,8 @@ import com.github.wbw.util.Assert;
 public class TestUtils {
 
 	/**
-	 * Uses nested {@link com.github.wbw.beans.DirectFieldAccessor}s to obtain a property
-	 * using dotted notation to traverse fields; e.g. "foo.bar.baz" will obtain a
+	 * Uses nested {@link com.github.wbw.beans.DirectFieldAccessor}s to obtain a
+	 * property using dotted notation to traverse fields; e.g. "foo.bar.baz" will obtain a
 	 * reference to the baz field of the bar field of foo. Adopted from Spring
 	 * Integration.
 	 * @param root The object.
