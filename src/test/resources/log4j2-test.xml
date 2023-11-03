@@ -6,9 +6,9 @@
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Logger name="com.github.wbw.context" level="warn"/>
-		<Logger name="com.github.wbw.retry" level="info"/>
-		<Logger name="com.github.wbw.transaction" level="info"/>
+		<Logger name="org.springframework.context" level="warn"/>
+		<Logger name="org.springframework.retry" level="info"/>
+		<Logger name="org.springframework.transaction" level="info"/>
 		<Root level="info">
 			<AppenderRef ref="STDOUT" />
 		</Root>
