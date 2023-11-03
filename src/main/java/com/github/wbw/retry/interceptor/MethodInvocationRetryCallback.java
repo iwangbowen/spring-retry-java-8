@@ -19,7 +19,7 @@ package com.github.wbw.retry.interceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import com.github.wbw.retry.RetryCallback;
 import com.github.wbw.retry.RetryOperations;
-import com.github.wbw.util.StringUtils;
+import org.springframework.util.StringUtils;
 
 /**
  * Callback class for a Spring AOP reflective `MethodInvocation` that can be retried using

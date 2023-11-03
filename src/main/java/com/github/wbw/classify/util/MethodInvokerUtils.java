@@ -23,12 +23,12 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.concurrent.atomic.AtomicReference;
 
-import com.github.wbw.aop.framework.Advised;
-import com.github.wbw.core.annotation.AnnotationUtils;
-import com.github.wbw.util.Assert;
-import com.github.wbw.util.ClassUtils;
-import com.github.wbw.util.ObjectUtils;
-import com.github.wbw.util.ReflectionUtils;
+import org.springframework.aop.framework.Advised;
+import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.util.Assert;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.ObjectUtils;
+import org.springframework.util.ReflectionUtils;
 
 /**
  * Utility methods to create {@link MethodInvoker} instances.

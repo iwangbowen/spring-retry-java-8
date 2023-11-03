@@ -22,10 +22,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.github.wbw.context.annotation.EnableAspectJAutoProxy;
-import com.github.wbw.context.annotation.Import;
-import com.github.wbw.core.Ordered;
-import com.github.wbw.core.annotation.AliasFor;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.Import;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.AliasFor;
 
 /**
  * Global enabler for <code>@Retryable</code> annotations in Spring beans. If this is

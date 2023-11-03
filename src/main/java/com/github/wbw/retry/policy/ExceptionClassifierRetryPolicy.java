@@ -25,7 +25,7 @@ import com.github.wbw.classify.SubclassClassifier;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.RetryPolicy;
 import com.github.wbw.retry.context.RetryContextSupport;
-import com.github.wbw.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * A {@link RetryPolicy} that dynamically adapts to one of a set of injected policies

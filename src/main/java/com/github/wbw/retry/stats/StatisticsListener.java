@@ -16,7 +16,7 @@
 
 package com.github.wbw.retry.stats;
 
-import com.github.wbw.core.AttributeAccessor;
+import org.springframework.core.AttributeAccessor;
 import com.github.wbw.retry.RetryCallback;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.RetryListener;

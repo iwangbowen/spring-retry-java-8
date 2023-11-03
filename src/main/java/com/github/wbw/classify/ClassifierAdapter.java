@@ -17,7 +17,7 @@ package com.github.wbw.classify;
 
 import com.github.wbw.classify.util.MethodInvoker;
 import com.github.wbw.classify.util.MethodInvokerUtils;
-import com.github.wbw.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * Wrapper for an object to adapt it to the {@link Classifier} interface.

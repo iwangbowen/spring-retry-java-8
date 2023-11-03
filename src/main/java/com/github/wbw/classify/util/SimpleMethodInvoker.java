@@ -19,9 +19,9 @@ package com.github.wbw.classify.util;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-import com.github.wbw.aop.framework.Advised;
-import com.github.wbw.util.Assert;
-import com.github.wbw.util.ClassUtils;
+import org.springframework.aop.framework.Advised;
+import org.springframework.util.Assert;
+import org.springframework.util.ClassUtils;
 
 /**
  * Simple implementation of the {@link MethodInvoker} interface that invokes a method on

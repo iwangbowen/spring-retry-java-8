@@ -18,7 +18,7 @@ package com.github.wbw.retry.backoff;
 
 import java.util.function.Supplier;
 
-import com.github.wbw.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * Implementation of {@link BackOffPolicy} that pauses for a fixed period of time before

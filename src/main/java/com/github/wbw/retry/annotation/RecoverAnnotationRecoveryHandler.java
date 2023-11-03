@@ -23,14 +23,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.github.wbw.classify.SubclassClassifier;
-import com.github.wbw.core.annotation.AnnotatedElementUtils;
+import org.springframework.core.annotation.AnnotatedElementUtils;
 import com.github.wbw.retry.ExhaustedRetryException;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.interceptor.MethodInvocationRecoverer;
 import com.github.wbw.retry.support.RetrySynchronizationManager;
-import com.github.wbw.util.ClassUtils;
-import com.github.wbw.util.ReflectionUtils;
-import com.github.wbw.util.StringUtils;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.ReflectionUtils;
+import org.springframework.util.StringUtils;
 
 /**
  * A recoverer for method invocations based on the <code>@Recover</code> annotation. A

@@ -22,11 +22,11 @@ import java.lang.annotation.Target;
 import java.lang.reflect.Method;
 import java.util.concurrent.atomic.AtomicReference;
 
-import com.github.wbw.aop.support.AopUtils;
-import com.github.wbw.core.annotation.AnnotationUtils;
-import com.github.wbw.util.Assert;
-import com.github.wbw.util.ObjectUtils;
-import com.github.wbw.util.ReflectionUtils;
+import org.springframework.aop.support.AopUtils;
+import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.util.Assert;
+import org.springframework.util.ObjectUtils;
+import org.springframework.util.ReflectionUtils;
 
 /**
  * MethodResolver implementation that finds a <em>single</em> Method on the given Class

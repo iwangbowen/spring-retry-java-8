@@ -20,16 +20,16 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.github.wbw.beans.BeansException;
-import com.github.wbw.beans.factory.BeanFactory;
-import com.github.wbw.beans.factory.BeanFactoryAware;
-import com.github.wbw.context.expression.BeanFactoryResolver;
-import com.github.wbw.expression.Expression;
-import com.github.wbw.expression.common.TemplateParserContext;
-import com.github.wbw.expression.spel.standard.SpelExpressionParser;
-import com.github.wbw.expression.spel.support.StandardEvaluationContext;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.context.expression.BeanFactoryResolver;
+import org.springframework.expression.Expression;
+import org.springframework.expression.common.TemplateParserContext;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
+import org.springframework.expression.spel.support.StandardEvaluationContext;
 import com.github.wbw.retry.RetryContext;
-import com.github.wbw.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * Subclass of {@link SimpleRetryPolicy} that delegates to super.canRetry() and, if true,

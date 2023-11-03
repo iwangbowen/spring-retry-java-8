@@ -16,7 +16,7 @@
 
 package com.github.wbw.retry;
 
-import com.github.wbw.core.AttributeAccessor;
+import org.springframework.core.AttributeAccessor;
 
 /**
  * Low-level access to ongoing retry operation. Normally not needed by clients, but can be

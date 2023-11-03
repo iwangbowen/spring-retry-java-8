@@ -34,7 +34,7 @@ import com.github.wbw.retry.policy.BinaryExceptionClassifierRetryPolicy;
 import com.github.wbw.retry.policy.CompositeRetryPolicy;
 import com.github.wbw.retry.policy.MaxAttemptsRetryPolicy;
 import com.github.wbw.retry.policy.TimeoutRetryPolicy;
-import com.github.wbw.util.Assert;
+import org.springframework.util.Assert;
 
 /**
  * Builder that provides a fluent API to configure new instances of {@link RetryTemplate}.

@@ -16,7 +16,7 @@
 
 package com.github.wbw.retry;
 
-import com.github.wbw.core.NestedRuntimeException;
+import org.springframework.core.NestedRuntimeException;
 
 @SuppressWarnings("serial")
 public class RetryException extends NestedRuntimeException {

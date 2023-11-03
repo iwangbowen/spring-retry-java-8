@@ -22,7 +22,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.github.wbw.core.annotation.AliasFor;
+import org.springframework.core.annotation.AliasFor;
 
 /**
  * Annotation for a method invocation that is retryable.
