@@ -11,17 +11,17 @@
 
 	<aop:config>
 		<aop:pointcut id="transactional"
-			expression="execution(* org.springframework..RetryOperationsInterceptorTests.Service.doTansactional(..))" />
+			expression="execution(* com.github.wbw..RetryOperationsInterceptorTests.Service.doTansactional(..))" />
 		<aop:advisor pointcut-ref="transactional"
 			advice-ref="retryAdvice" order="-1"/>
 		<aop:advisor pointcut-ref="transactional" advice-ref="txAdvice" order="0"/>
 	</aop:config>
 
 	<bean id="bean"
-		class="org.springframework.retry.interceptor.RetryOperationsInterceptorTests$ServiceImpl" />
+		class="com.github.wbw.retry.interceptor.RetryOperationsInterceptorTests$ServiceImpl" />
 
 	<bean id="retryAdvice"
-		class="org.springframework.retry.interceptor.RetryOperationsInterceptor"/>
+		class="com.github.wbw.retry.interceptor.RetryOperationsInterceptor"/>
 
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
@@ -30,6 +30,6 @@
 	</tx:advice>
 
 	<bean id="transactionManager"
-		class="org.springframework.retry.ResourcelessTransactionManager" />
+		class="com.github.wbw.retry.ResourcelessTransactionManager" />
 
 </beans>
