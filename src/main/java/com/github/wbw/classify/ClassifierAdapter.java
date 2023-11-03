@@ -64,10 +64,10 @@ public class ClassifierAdapter<C, T> implements Classifier<C, T> {
 	}
 
 	/**
-	 * Search for the {@link com.github.wbw.classify.annotation.Classifier
-	 * Classifier} annotation on a method in the supplied delegate and use that to create
-	 * a {@link Classifier} from the parameter type to the return type. If the annotation
-	 * is not found a unique non-void method with a single parameter will be used, if it
+	 * Search for the {@link com.github.wbw.classify.annotation.Classifier Classifier}
+	 * annotation on a method in the supplied delegate and use that to create a
+	 * {@link Classifier} from the parameter type to the return type. If the annotation is
+	 * not found a unique non-void method with a single parameter will be used, if it
 	 * exists. The signature of the method cannot be checked here, so might be a runtime
 	 * exception when the method is invoked if the signature doesn't match the classifier
 	 * types.

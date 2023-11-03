@@ -32,8 +32,8 @@ import com.github.wbw.retry.RetryContext;
  * {@link BackOffContext} that can be used to track state through subsequent back off
  * invocations. Each back off process is handled via a call to {@link #backOff}.
  *
- * The {@link com.github.wbw.retry.support.RetryTemplate} will pass in the
- * corresponding {@link BackOffContext} object created by the call to {@link #start}.
+ * The {@link com.github.wbw.retry.support.RetryTemplate} will pass in the corresponding
+ * {@link BackOffContext} object created by the call to {@link #start}.
  *
  * @author Rob Harrop
  * @author Dave Syer

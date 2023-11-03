@@ -54,8 +54,8 @@ import com.github.wbw.retry.policy.SimpleRetryPolicy;
  * Also by default, each operation is retried for a maximum of three attempts with no back
  * off in between. This behaviour can be configured using the
  * {@link #setRetryPolicy(RetryPolicy)} and {@link #setBackOffPolicy(BackOffPolicy)}
- * properties. The {@link com.github.wbw.retry.backoff.BackOffPolicy} controls how
- * long the pause is between each individual retry attempt.
+ * properties. The {@link com.github.wbw.retry.backoff.BackOffPolicy} controls how long
+ * the pause is between each individual retry attempt.
  * <p>
  * A new instance can be fluently configured via {@link #builder}, e.g: <pre> {@code
  * RetryTemplate.builder()
