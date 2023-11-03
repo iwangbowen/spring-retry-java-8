@@ -19,7 +19,7 @@ package com.github.wbw.classify;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.util.Assert;
+import com.github.wbw.util.Assert;
 
 /**
  * Fluent API for BinaryExceptionClassifier configuration.

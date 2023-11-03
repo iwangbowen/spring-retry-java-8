@@ -22,7 +22,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import org.springframework.context.annotation.Import;
+import com.github.wbw.context.annotation.Import;
 
 /**
  * Annotation for a method invocation that is a recovery handler. A suitable recovery

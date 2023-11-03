@@ -16,7 +16,7 @@
 
 package com.github.wbw.retry.context;
 
-import org.springframework.core.AttributeAccessorSupport;
+import com.github.wbw.core.AttributeAccessorSupport;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.RetryPolicy;
 

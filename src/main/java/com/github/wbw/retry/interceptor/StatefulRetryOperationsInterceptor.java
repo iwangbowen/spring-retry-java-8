@@ -32,9 +32,9 @@ import com.github.wbw.retry.RetryState;
 import com.github.wbw.retry.policy.NeverRetryPolicy;
 import com.github.wbw.retry.support.DefaultRetryState;
 import com.github.wbw.retry.support.RetryTemplate;
-import org.springframework.util.Assert;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
+import com.github.wbw.util.Assert;
+import com.github.wbw.util.ObjectUtils;
+import com.github.wbw.util.StringUtils;
 
 /**
  * A {@link MethodInterceptor} that can be used to automatically retry calls to a method

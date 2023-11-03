@@ -24,7 +24,7 @@ import com.github.wbw.retry.backoff.BackOffPolicy;
 import com.github.wbw.retry.backoff.ExponentialBackOffPolicy;
 import com.github.wbw.retry.policy.SimpleRetryPolicy;
 import com.github.wbw.retry.support.RetryTemplate;
-import org.springframework.util.Assert;
+import com.github.wbw.util.Assert;
 
 /**
  * <p>

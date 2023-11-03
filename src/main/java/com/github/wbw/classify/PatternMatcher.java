@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.util.Assert;
+import com.github.wbw.util.Assert;
 
 /**
  * @author Dave Syer

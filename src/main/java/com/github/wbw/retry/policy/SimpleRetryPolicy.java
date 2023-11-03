@@ -25,8 +25,8 @@ import com.github.wbw.classify.BinaryExceptionClassifier;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.RetryPolicy;
 import com.github.wbw.retry.context.RetryContextSupport;
-import org.springframework.util.Assert;
-import org.springframework.util.ClassUtils;
+import com.github.wbw.util.Assert;
+import com.github.wbw.util.ClassUtils;
 
 /**
  * Simple retry policy that retries a fixed number of times for a set of named exceptions

@@ -19,7 +19,7 @@ package com.github.wbw.retry.backoff;
 import java.util.Random;
 import java.util.function.Supplier;
 
-import org.springframework.util.Assert;
+import com.github.wbw.util.Assert;
 
 /**
  * Implementation of {@link BackOffPolicy} that pauses for a random period of time before

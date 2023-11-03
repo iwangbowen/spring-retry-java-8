@@ -18,7 +18,7 @@ package com.github.wbw.retry.stats;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.springframework.core.AttributeAccessorSupport;
+import com.github.wbw.core.AttributeAccessorSupport;
 import com.github.wbw.retry.RetryStatistics;
 
 /**

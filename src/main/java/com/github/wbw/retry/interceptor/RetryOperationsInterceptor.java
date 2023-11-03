@@ -21,7 +21,7 @@ import java.util.Arrays;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
-import org.springframework.aop.ProxyMethodInvocation;
+import com.github.wbw.aop.ProxyMethodInvocation;
 import com.github.wbw.retry.RecoveryCallback;
 import com.github.wbw.retry.RetryCallback;
 import com.github.wbw.retry.RetryContext;
@@ -29,8 +29,8 @@ import com.github.wbw.retry.RetryOperations;
 import com.github.wbw.retry.support.Args;
 import com.github.wbw.retry.support.RetrySynchronizationManager;
 import com.github.wbw.retry.support.RetryTemplate;
-import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
+import com.github.wbw.util.Assert;
+import com.github.wbw.util.StringUtils;
 
 /**
  * A {@link MethodInterceptor} that can be used to automatically retry calls to a method

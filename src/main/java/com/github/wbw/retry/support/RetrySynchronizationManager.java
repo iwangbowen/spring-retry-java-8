@@ -19,7 +19,7 @@ package com.github.wbw.retry.support;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.springframework.lang.Nullable;
+import com.github.wbw.lang.Nullable;
 import com.github.wbw.retry.RetryCallback;
 import com.github.wbw.retry.RetryContext;
 import com.github.wbw.retry.RetryOperations;

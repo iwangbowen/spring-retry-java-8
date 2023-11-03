@@ -22,8 +22,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.github.wbw.retry.RetryContext;
-import org.springframework.util.Assert;
-import org.springframework.util.ClassUtils;
+import com.github.wbw.util.Assert;
+import com.github.wbw.util.ClassUtils;
 
 /**
  * Implementation of {@link BackOffPolicy} that increases the back off period for each
