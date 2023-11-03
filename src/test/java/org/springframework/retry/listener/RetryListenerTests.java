@@ -71,28 +71,28 @@ public class RetryListenerTests {
 
 	@Test
 	public void testOpenDefaultImplementation() {
-		var retryListener = new RetryListener() {
+		RetryListener retryListener = new RetryListener() {
 		};
 		assertThat(retryListener.open(null, null)).isTrue();
 	}
 
 	@Test
 	public void testCloseDefaultImplementation() {
-		var retryListener = new RetryListener() {
+		RetryListener retryListener = new RetryListener() {
 		};
 		assertThatNoException().isThrownBy(() -> retryListener.close(null, null, null));
 	}
 
 	@Test
 	public void testOnSuccessDefaultImplementation() {
-		var retryListener = new RetryListener() {
+		RetryListener retryListener = new RetryListener() {
 		};
 		assertThatNoException().isThrownBy(() -> retryListener.onError(null, null, null));
 	}
 
 	@Test
 	public void testOnErrorDefaultImplementation() {
-		var retryListener = new RetryListener() {
+		RetryListener retryListener = new RetryListener() {
 		};
 		assertThatNoException().isThrownBy(() -> retryListener.onError(null, null, null));
 	}
