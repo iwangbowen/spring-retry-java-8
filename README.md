@@ -5,11 +5,6 @@
 正在发布中，敬请期待。
 
 ```xml
-<dependency>
-    <groupId>com.github.wbw</groupId>
-    <artifactId>spring-retry</artifactId>
-    <version>1.2.2.RELEASE</version>
-</dependency>
 ```
 
 ## 更新记录
