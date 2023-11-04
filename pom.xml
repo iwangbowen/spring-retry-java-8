@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.retry</groupId>
+	<groupId>io.github.iwangbowen</groupId>
 	<artifactId>spring-retry</artifactId>
 	<version>${revision}</version>
 	<name>Spring Retry</name>
@@ -14,7 +14,7 @@
 		operation to retry if it fails, based on the type of exception, and with a fixed
 		or exponential backoff.]]>
 	</description>
-	<url>https://www.springsource.org</url>
+	<url>https://github.com/iwangbowen/spring-retry-java-8</url>
 	<organization>
 		<name>SpringSource</name>
 		<url>https://www.springsource.com</url>
@@ -41,19 +41,37 @@
 	</properties>
 
 	<scm>
-		<url>https://github.com/spring-projects/spring-retry</url>
-		<connection>scm:git:git://github.com/spring-projects/spring-retry.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-retry.git</developerConnection>
+		<url>https://github.com/iwangbowen/spring-retry-java-8</url>
+		<connection>scm:git:git://github.com/iwangbowen/spring-retry-java-8.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/iwangbowen/spring-retry-java-8.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<developers>
 		<developer>
-			<id>dsyer</id>
-			<name>Dave Syer</name>
-			<email>dsyer@vmware.com</email>
+			<id>wangbowen</id>
+			<name>wangbowen</name>
+			<email>iwangbowen@gmail.com</email>
+			<roles>
+				<role>committer</role>
+				<role>Architect</role>
+			</roles>
+			<timezone>+8</timezone>
 		</developer>
 	</developers>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<!--   这个id需要和settings.xml里面的id一致         -->
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<!--   这个id需要和settings.xml里面的id一致         -->
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -190,6 +208,27 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0</version>
+				</plugin>
+				<!-- GPG -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-gpg-plugin</artifactId>
+					<version>1.6</version>
+					<configuration>
+						<gpgArguments>
+							<arg>--pinentry-mode</arg>
+							<arg>loopback</arg>
+						</gpgArguments>
+					</configuration>
+					<executions>
+						<execution>
+							<id>sign-artifacts</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>sign</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
